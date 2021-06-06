@@ -9,7 +9,7 @@ class Student:
 
     # __new__:用于创建对象
     def __new__(cls, *args, **kwargs):
-        print('__new__被调用只需了,cls的id值为{0}'.format(id(cls)))
+        print('__new__被调用了,cls的id值为{0}'.format(id(cls)))
         obj = super().__new__(cls)
         print('创建的对象的id为{0}'.format(id(obj)))
         return obj
